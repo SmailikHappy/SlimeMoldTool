@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"Version": 5,
+	"VersionName": "0.5",
+	"FriendlyName": "SlimeMold",
+	"Description": "Tool that creates helps you to create a skeleton. I am using skeleton data to generate a slime mold that covers world geometry.",
+	"Category": "Other",
+	"CreatedBy": "SmailikHappy",
+	"CreatedByURL": "https://smailikhappy.github.io/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "SlimeMoldEditorTool",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "SlimeMold",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
