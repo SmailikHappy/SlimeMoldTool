@@ -1,6 +1,6 @@
 # SlimeMoldTool, but technically a skeleton editing tool
 
-> The tool is still work-in-progress
+> The tool is still work-in-progress\
 > Some groundbreaking changes might appear
 
 https://github.com/user-attachments/assets/4c4ea281-7786-498a-b82c-a7872b53f3f5
