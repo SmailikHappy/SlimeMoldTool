@@ -6,8 +6,8 @@
 https://github.com/user-attachments/assets/d67b30e3-7c07-48e2-91a8-1b47c4b09978
 
 This project implements a new editor mode with 2 tools:
-- **Skeleton Editor** - allows the user to place points and connect them with lines
-- **Mesh Editor** - can generate mesh in the editor from the points and lines
+- **Skeleton Editor** - a tool to place points and connect them with lines
+- **Mesh Editor** - has buttons to call associated delegates in the actor a user is editing and exposes the user’s custom properties
 
 > *Reminder, that's how I used the tool in our team's project.*
 > *But as a developer, you can use it for your own purposes in any way you want.*
