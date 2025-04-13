@@ -27,9 +27,9 @@ After that, the tool is ready to use.
 
 ## How to actually use the tool
 
-1. Get an actor and add the `SlimeMoldActorComponent` component to it. The tool can edit only those actors that have this component attached by default.
+1. Get an actor and add the `SlimeMoldActorComponent` component to it. The tool can edit only those actors that have this component attached by default.\
    ![img](GitHubAssets/add_component.png)
-2. In the top right switch the editor mode to `SlimeMoldEditorTool`
+2. In the top right switch the editor mode to `SlimeMoldEditorTool`\
    ![img](GitHubAssets/select_editor.png)
 3. Select the actor with the component
 4. Select any tool you want to use, further explanation regarding the tools can be found in [the tools section](#Tools)
