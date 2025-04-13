@@ -46,7 +46,7 @@ In the skeleton editor you can place / move / delete points and connect / discon
 
 ### Mouse and keyboard controls:
 
-**Mouse click:**\ 
+**Mouse click:**\
 If any point has been clicked, selects only this point (deselects all the rest) \
 If empty space has been clicked, deselects the selection
 
@@ -69,10 +69,8 @@ If you select the points, gizmo appears and you can move the points around using
 - **Buttons:**
   - **Delete:**\
     Deletes selected points
-
   - **Disconnect:**\
     Disconnects selected points
-
   - **Split line:**\
     Creates new points in the middle of the selected lines and updates the lines (connections)
 
@@ -82,12 +80,12 @@ If you select the points, gizmo appears and you can move the points around using
 
 - **Editor settings:**
   - **Selection radius threshold:**\
-    Threshold of mouse screen-distance to the point to select it. The lower is the value, the smaller distance to the point is needed to select it.
+    Threshold of mouse screen-distance to the point to select it. The lower is the value, the smaller is the distance to the point needed to select it.
   - **Change selection on Point create:**\
-    If checked, when new point is created, it automatically becomes selected and all the other points are deselected.\
+    If checked, when a new point is created, it automatically becomes selected and all the other points are deselected.\
     If unchecked, the newly created point is not selected and all the other points remain selected
   - **Editor colors:**\
-    Gives the user the ability to change the colors of skeleton visualisation in the editor
+    Gives a user the ability to change the colors of skeleton visualisation in the editor
 
 
 
@@ -123,13 +121,13 @@ To do so:
 0. Open content browser
 1. Create a new class that inherits from the `SlimeMoldMeshPropertyBase` class\
    ![img](GitHubAssets/pick_property_base.png)
-2. Create a variable and make it public by click an "eye" icon next the the variable\
+2. Create a variable and make it public by clicking an "eye" icon next the the variable\
    ![img](GitHubAssets/new_var.png)
 3. Go to the editor
 4. Select any actor with attached `SlimeMoldActorComponent`
 5. Select the `Mesh Editor` in the tool
 6. In the 'Mesh Property Class' drop-down menu, select your class.\
-   ![img](GitHubAssets/pick_property_base.png)
+   ![img](GitHubAssets/select%20properties.png)
 
 Now you can see and edit your variables in the panel.\
 ![img](GitHubAssets/new%20variables.png)
@@ -144,7 +142,7 @@ To do so:
    ![img](GitHubAssets/select_component.png)
 3. In the details panel, find 'Events' section and create (or locate in the editor graph) any of the events - `OnGenerateMesh`; `OnGenerateDebugInfo`; `OnClearMesh`; `OnAssignMaterials`\
    ![img](GitHubAssets/find_event.png)
-4. Now you should see an event in the blueprint graph, this event will be called when the associated button is pressed. This event has varaible with it.\
+4. Now you should see an event in the blueprint graph, this event will be called when the associated button is pressed. This event has a variable with it.\
    ![img](GitHubAssets/event_shown.png)
 5. Cast the variable to your class\
    ![img](GitHubAssets/cast.png)
@@ -157,19 +155,23 @@ Now you can use your variables from the tool's panel in the actor's code.
 
 ## SlimeMoldActorComponent
 
+`Plugins/SlimeMold/Source/SlimeMold/Public/SlimeMoldSkeletonComponent.h`
+
 This component is storage of the skeleton data and has 4 events (delegates) mentioned in the Mesh Editor panel. These events are called when the according buttons are pressed in the Mesh Editor panel.
 
 
 
 # Example
 
-In this repository there is an example project that uses the tool. The way I intended it to use is: using skeleton toll to create a skeleton (a frame); using mesh tool to generate mesh from the skeleton.
+In this repository there is an example project that uses the tool.\
+*The way I intended it to use is: using skeleton tool to create a skeleton (a wireframe); using mesh tool to generate mesh from the skeleton.*
 
+**This repository uses Geometry Script plugin for mesh generation.**
 
 
 ## Content
 
-- **L_ExampleMap** - map that contains the an exmaple actor
-- **BP_SlimeMoldExample** - blueprint class with `SlimeMoldActorComponent` component and some generation code
+- **L_ExampleMap** - map that contains an exmaple actor
+- **BP_SlimeMoldExample** - blueprint class with `SlimeMoldActorComponent` and some generation code
 - **PS_SlimeMoldMeshPropertiesExample** - custom mesh editor property set
 - **M_GoopMaterialExample** - material for generated mesh
